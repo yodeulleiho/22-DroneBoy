@@ -19,3 +19,29 @@ similarities = [cos_sim_12 cos_sim_23 cos_sim_13];  %벡터간 코사인 행렬
 
 [dmin, dmin_index] = min(distances);      %가장 가까운 거리값 인덱스 추출
 [imin, imin_index] = max(similarities);   %가장 코사인 유사도가 높은 값 인덱스 추출
+
+
+%각 인덱스 값에 해당하는 벡터 추출
+if dmin_index == 1
+    closest_vectors = vectors(1:2, :);
+elseif dmin_index == 2
+    closest_vectors = vectors(2:3, :);
+elseif dmin_index == 3
+    closest_vectors = [vectors(1, :); vectors(3, :)];
+end
+
+
+if imin_index == 1
+    most_similar_indices = vectors(1:2, :);
+elseif imin_index == 2
+    most_similar_indices = vectors(2:3, :);
+elseif imin_index == 3
+    most_similar_indices = [vectors(1, :); vectors(3, :)];
+end
+
+
+%벡터 출력
+fprintf('유클라디안 거리로 보았을 때 가장 유사한 벡터:\n');
+disp(closest_vectors);
+fprintf('코사인 유사도로 보았을 때 가장 유사한 벡터:\n');
+disp(most_similar_indices);
