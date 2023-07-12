@@ -7,6 +7,7 @@
 사용 기체 : DJI Tello 미니드론
 
 경기장은 다음 그림과 같다.
+<img width="598" alt="경기장" src="https://github.com/yodeulleiho/22-DroneBoy/assets/119280385/d25145cb-f66e-4841-93d5-7b465530ecf0">
 
 이륙 -> 첫 번째 링 통과 후 90도 우회전 -> 두 번째 링 통과 후 90도 우회전 -> 세 번째 링 통과 후 각도 변경 ->착륙 지점에 착륙
 
@@ -25,7 +26,9 @@
 
 알고리즘 다이어그램
 ====
+![1단계 다이어그램](https://github.com/yodeulleiho/22-DroneBoy/assets/119280385/529c8138-1be5-41aa-8344-948a758bca2f)
 
+![2,3,4단계 다이어그램](https://github.com/yodeulleiho/22-DroneBoy/assets/119280385/da6f0495-a8cc-4e30-8313-276664a370ef)
 
 소스코드 설명
 ====
