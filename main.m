@@ -257,7 +257,7 @@ while 1  %전진
         turn(drone, deg2rad(90));
         break
     end
-    if current_red >= 2000
+    if current_red >= 2300
         turn(drone, deg2rad(90));
         break
     end
