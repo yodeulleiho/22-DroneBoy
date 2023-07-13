@@ -58,12 +58,12 @@ while 1
         turn(drone, deg2rad(90));
         break
     end
-    if current_red >= 1700
+    if current_red >= 1100
         turn(drone, deg2rad(90));
         break
     end
     
-    moveforward(drone,'Distance', 0.9,'Speed',1);
+    moveforward(drone,'Distance', 1.5,'Speed',1);
 end
 
 moveback(drone, 'Distance', 0.2, 'Speed', 1);
@@ -257,12 +257,12 @@ while 1  %전진
         turn(drone, deg2rad(90));
         break
     end
-    if current_red >= 2300
+    if current_red >= 1500
         turn(drone, deg2rad(90));
         break
     end
     
-    moveforward(drone,'Distance', 0.5,'Speed',1);
+    moveforward(drone,'Distance', 1.6,'Speed',1);
 end
 
 moveback(drone, 'Distance', 0.2, 'Speed', 1);
@@ -456,12 +456,12 @@ while 1  %전진
         turn(drone, deg2rad(45));
         break
     end
-    if current_gre >= 2000
+    if current_gre >= 2100
         turn(drone, deg2rad(45));
         break
     end
     
-    moveforward(drone,'Distance', 0.7,'Speed',1);
+    moveforward(drone,'Distance', 1.6,'Speed',1);
 end
 
 
@@ -659,7 +659,7 @@ while 1
         %land(drone);
         %break
     %end
-    if current_pur >= 1000
+    if current_pur >= 2000
         land(drone);
         break
     end
